@@ -99,10 +99,16 @@ class Solution {
 
 ```java
 public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    // 简化代码, 不用在循环中判断是否为第一个节点
     ListNode dummyHead = new ListNode(0);
     ListNode p = l1, q = l2, curr = dummyHead;
     int carry = 0;
+    // 更加通用的循环, 包含了所有可能的3种情况
+    // 1. 正常相加 1+1
+    // 2. 溢出 1+9
+    // 3. 某一个数位数较少
     while (p != null || q != null) {
+        // 长度不相等时, 缺省数置为0
         int x = (p != null) ? p.val : 0;
         int y = (q != null) ? q.val : 0;
         int sum = carry + x + y;
