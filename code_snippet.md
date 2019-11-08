@@ -1,3 +1,5 @@
+find the minist number in an array
+
 ```java
 int[] a = new int[N];
 int min = 0;
