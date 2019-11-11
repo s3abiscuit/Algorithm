@@ -13,3 +13,8 @@
 4. merge
 5. quick
 6. heap
+
+## Java implementation
+
+// java.util.DualPivotQuicksort
+DualPivotQuicksort.java
