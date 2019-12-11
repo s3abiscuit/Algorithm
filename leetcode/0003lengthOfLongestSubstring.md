@@ -2,6 +2,7 @@
 
 给定一个字符串，请你找出其中不含有重复字符的最长子串的长度。
 
+
 ## 解决方法：
 
 `abcdefgahijklmn`
@@ -34,6 +35,9 @@ class Solution {
 优化
 
 ```java
+// abcdefga
+// abcdefgc这个用例的情况下性能会有优化
+
 public class Solution {
     public int lengthOfLongestSubstring(String s) {
         int n = s.length(), ans = 0;
