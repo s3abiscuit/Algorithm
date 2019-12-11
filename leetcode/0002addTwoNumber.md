@@ -1,4 +1,4 @@
-题目描述：
+## 题目描述：
 
 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
 
@@ -10,7 +10,7 @@
 输出：7 -> 0 -> 8
 原因：342 + 465 = 807
 
-解决方法
+## 我的解法
 
 ```java
 /**
@@ -31,7 +31,7 @@ class Solution {
         while (l1 != null && l2 != null) {    
             // 同步循环两个链表
             // 每个循环都要先考虑进位的情况
-            if (flag) {
+            if (flag) {    // 进位标记
                 temp1 = (l1.val + l2.val + 1) % 10;
                 temp2 = (l1.val + l2.val + 1) / 10;
             } else {
@@ -39,6 +39,7 @@ class Solution {
                 temp2 = (l1.val + l2.val) / 10;
             }
             flag = temp2 == 1;
+            // 判断是否是第一个节点, 标准答案有更优雅的解法
             if (result == null) {
                 result = new ListNode(temp1);
                 walker = result;
@@ -88,7 +89,7 @@ class Solution {
                 flag = false;
             }
         }
-
+        // 到这里就可以看到这种解法很不优雅
         if (flag) {    // [5], [5]
             walker.next = new ListNode(1);
             walker = walker.next;
@@ -99,7 +100,7 @@ class Solution {
 }
 ```
 
-参考答案
+## 参考答案
 
 ```java
 public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
@@ -133,3 +134,8 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 来源：力扣（LeetCode）
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ```
+
+## 总结
+
+1. 链表头节点和其余节点不同处理方式的优雅解法
+2. 一个循环完成两个链表的遍历, 补0的处理
