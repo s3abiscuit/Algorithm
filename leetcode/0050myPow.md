@@ -1,3 +1,9 @@
+## 题目描述
+
+实现 pow(x, n) ，即计算 x 的 n 次幂函数。
+
+## 解法
+
 ```java
 class Solution {
     private double fastPow(double x, long n) {

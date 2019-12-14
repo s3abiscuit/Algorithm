@@ -9,7 +9,6 @@
 
 ## 解法
 
-
 ```java
 class Solution {
     public int removeElement(int[] nums, int val) {
