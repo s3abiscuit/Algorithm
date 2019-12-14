@@ -5,7 +5,7 @@ needle 字符串出现的第一个位置 (从0开始)。如果不存在，则返
 
 ## 解法
 
-```
+```java
 class Solution {
     public int strStr(String haystack, String needle) {
         int sizeHS = haystack.length();
