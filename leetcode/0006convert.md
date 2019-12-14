@@ -5,7 +5,9 @@
 比如输入字符串为 "LEETCODEISHIRING" 行数为 3 时，排列如下：
 
 L   C   I   R
+
 E T O E S I I G
+
 E   D   H   N
 
 ## 解法
