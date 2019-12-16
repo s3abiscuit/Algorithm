@@ -242,4 +242,6 @@ public class Solution {
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ```
 
-https://www.zhihu.com/question/20507130
+- https://www.zhihu.com/question/20507130
+- https://www.jianshu.com/p/92f1b9020e64
+- https://leetcode-cn.com/problems/generate-parentheses/solution/hui-su-suan-fa-by-liweiwei1419/
