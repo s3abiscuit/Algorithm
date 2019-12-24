@@ -10,6 +10,23 @@ public int findMinist(int[] nums) {
         }
     }
 }
+
+// resursion
+public static int findMinist(int[] arrays, int L, int R) {
+
+    //如果该数组只有一个数，那么最小的就是该数组第一个值了
+    if (L == R) {
+        return arrays[L];
+    } else {
+        int a = arrays[L];
+        int b = findMinist(arrays, L + 1, R);
+        if (a < b) {
+            return a;
+        } else {
+            return b;
+        }
+    }
+}
 ```
 
 ## string to integer
