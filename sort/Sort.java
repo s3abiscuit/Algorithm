@@ -3,6 +3,7 @@ class Sort {
         
     }
     
+    /****************************selection sort**********************************/
     public static void selectionSort (Comparable[] a) {
         int n = a.length;
         for (int i = 0; i < n; i++) {
@@ -16,6 +17,7 @@ class Sort {
         assert isSorted(a);
     }
     
+    /****************************insertion sort**********************************/
     public static void insertionSort(Comparable[] a) {
         int n = a.length;
         for (int i = 1; i < n; i++) {
@@ -27,6 +29,7 @@ class Sort {
         assert isSorted(a);
     }
     
+    /********************************shell sort**********************************/
     public static void shellSort (Comparable[] a) {
         int n = a.length;
 
@@ -84,7 +87,6 @@ class Sort {
         // postcondition: a[lo .. hi] is sorted
         assert isSorted(a, lo, hi);
     }
-    /********************************merge sort**********************************/
     
     /********************************quick sort**********************************/
     public static void quickSort(Comparable[] a) {
@@ -132,11 +134,12 @@ class Sort {
         // now, a[lo .. j-1] <= a[j] <= a[j+1 .. hi]
         return j;
     }
-    /********************************quick sort**********************************/
     
     /*********************************heap sort**********************************/
+    // 大根堆: 根的值大于左子树和右子树
     public static void heapSort(Comparable[] pq) {
         int n = pq.length;
+        // sink所有有子树的节点, 第n/2个节点表示倒数第一个有子树的节点
         for (int k = n/2; k >= 1; k--)
             sink(pq, k, n);
         while (n > 1) {
@@ -154,5 +157,4 @@ class Sort {
             k = j;
         }
     }
-    /*********************************heap sort**********************************/
 }
