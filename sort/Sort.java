@@ -3,7 +3,7 @@ class Sort {
         
     }
     
-    public static void selection (Comparable[] a) {
+    public static void selectionSort (Comparable[] a) {
         int n = a.length;
         for (int i = 0; i < n; i++) {
             int min = i;
@@ -16,16 +16,18 @@ class Sort {
         assert isSorted(a);
     }
     
-    public static void insertion (Comparable[] a, int lo, int hi) {
-      for (int i = lo + 1; i < hi; i++) {
-          for (int j = i; j > lo && less(a[j], a[j-1]); j--) {
-              exch(a, j, j-1);
-          }
-      }
-      assert isSorted(a, lo, hi);
+    public static void insertionSort(Comparable[] a) {
+        int n = a.length;
+        for (int i = 1; i < n; i++) {
+            for (int j = i; j > 0 && less(a[j], a[j-1]); j--) {
+                exch(a, j, j-1);
+            }
+            assert isSorted(a, 0, i);
+        }
+        assert isSorted(a);
     }
     
-    public static void shell (Comparable[] a) {
+    public static void shellSort (Comparable[] a) {
         int n = a.length;
 
         // 3x+1 increment sequence:  1, 4, 13, 40, 121, 364, 1093, ... 
@@ -46,17 +48,17 @@ class Sort {
     }
     
     /********************************merge sort**********************************/
-    public static void merge (Comparable[] a) {
+    public static void mergeSort (Comparable[] a) {
         Comparable[] aux = new Comparable[a.length];
-        sort(a, aux, 0, a.length-1);
+        mergeSort(a, aux, 0, a.length-1);
         assert isSorted(a);
     }
     
-    private static void sort(Comparable[] a, Comparable[] aux, int lo, int hi) {
+    private static void mergeSort (Comparable[] a, Comparable[] aux, int lo, int hi) {
         if (hi <= lo) return;
         int mid = lo + (hi - lo) / 2;
-        sort(a, aux, lo, mid);
-        sort(a, aux, mid + 1, hi);
+        mergeSort(a, aux, lo, mid);
+        mergeSort(a, aux, mid + 1, hi);
         merge(a, aux, lo, mid, hi);
     }
     
@@ -85,18 +87,18 @@ class Sort {
     /********************************merge sort**********************************/
     
     /********************************quick sort**********************************/
-    public static void sort(Comparable[] a) {
+    public static void quickSort(Comparable[] a) {
         StdRandom.shuffle(a);
-        sort(a, 0, a.length - 1);
+        quickSort(a, 0, a.length - 1);
         assert isSorted(a);
     }
 
     // quicksort the subarray from a[lo] to a[hi]
-    private static void sort(Comparable[] a, int lo, int hi) { 
+    private static void quickSort(Comparable[] a, int lo, int hi) { 
         if (hi <= lo) return;
         int j = partition(a, lo, hi);
-        sort(a, lo, j-1);
-        sort(a, j+1, hi);
+        quickSort(a, lo, j-1);
+        quickSort(a, j+1, hi);
         assert isSorted(a, lo, hi);
     }
 
@@ -133,7 +135,7 @@ class Sort {
     /********************************quick sort**********************************/
     
     /*********************************heap sort**********************************/
-    public static void sort(Comparable[] pq) {
+    public static void heapSort(Comparable[] pq) {
         int n = pq.length;
         for (int k = n/2; k >= 1; k--)
             sink(pq, k, n);
