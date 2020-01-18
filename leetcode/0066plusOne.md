@@ -21,3 +21,27 @@ class Solution {
     }
 }
 ```
+
+
+改进
+
+```java
+class Solution {
+    public int[] plusOne(int[] digits) {
+        int len = digits.length;
+        while (--len>=0) {
+            if (digits[len]+1<10) {
+                digits[len] += 1;
+                break;
+            }
+            digits[len] = 0;
+            if (len==0) {
+                digits = new int[digits.length+1];
+                digits[0] = 1;
+                break;
+            }
+        }
+        return digits;
+    }
+}
+```
