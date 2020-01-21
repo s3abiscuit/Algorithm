@@ -1,7 +1,15 @@
+## 题目描述
+
 编写一个函数来查找字符串数组中的最长公共前缀。
 
 如果不存在公共前缀，返回空字符串 ""。
 
+|case|输入|输出|
+|:--|:--|:--|
+|1|`["flower","flow","flight"]`|`"fl"`|
+|2|`["dog","racecar","car"]`|`""`|
+
+## 解法
 ```java
 class Solution {
     public String longestCommonPrefix(String[] strs) {
