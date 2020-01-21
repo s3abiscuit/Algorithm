@@ -8,27 +8,8 @@
 |2|`10`|`false`|
 
 ## 解法
-```java
-class Solution {
-    public boolean isPalindrome(int x) {
-        if (x < 0) return false;
-        String str = "";
-        while (x/10 != 0) {
-            str += x%10;
-            x=x/10;
-        }
-        str += x;
-        System.out.println(str);
-        int N = str.length();
-        for (int i = 0; i < N/2; i++) {
-            if (str.charAt(i) != str.charAt(N-1-i)) return false;
-        }
-        return true;
-    }
-}
-```
 
-优化
+先转化为字符串, 然后遍历
 
 ```java
 class Solution {
@@ -48,7 +29,7 @@ class Solution {
 }
 ```
 
-优化二
+优化一: 反转数字, 然后比较是否相等
 
 ```java
 class Solution {
@@ -64,9 +45,7 @@ class Solution {
 }
 ```
 
-优化三
-
-遍历一半, 但是要注意10010这类以0结尾的数
+优化二: 遍历一半, 但是要注意10010这类以0结尾的数
 
 ```java
 class Solution {
