@@ -16,7 +16,7 @@ class Solution {
         if (sizeHS > 0 && sizeND == 0) return 0;
         int result = 0;
         char temp = needle.charAt(0);
-
+        // i是遍历haystack的下标 范围是[0, haystack.length()-needle.length()]
         for (int i = 0; i <= sizeHS-sizeND; i++) {
             
             if (temp == haystack.charAt(i)) {
