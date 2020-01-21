@@ -27,3 +27,57 @@ class Solution {
     }
 }
 ```
+
+优化
+
+```java
+class Solution {
+    public boolean isPalindrome(int x) {
+        if (x < 0) return false;
+        String str = "";
+        while (x != 0) {
+            str += x%10;
+            x=x/10;
+        }
+        int N = str.length();
+        for (int i = 0; i < N/2; i++) {
+            if (str.charAt(i) != str.charAt(N-1-i)) return false;
+        }
+        return true;
+    }
+}
+```
+
+优化二
+
+```java
+class Solution {
+    public boolean isPalindrome(int x) {
+        if (x < 0) return false;
+        int copyX = x, reverse = 0;
+        while (copyX > 0) {
+            reverse = reverse * 10 + copyX % 10;
+            copyX /= 10;
+        }
+        return x == reverse;
+    }
+}
+```
+
+优化三
+
+遍历一半, 但是要注意10010这类以0结尾的数
+
+```java
+class Solution {
+    public boolean isPalindrome(int x) {
+        if (x < 0 || (x != 0 && x % 10 == 0)) return false;
+        int halfReverseX = 0;
+        while (x > halfReverseX) {
+            halfReverseX = halfReverseX * 10 + x % 10;
+            x /= 10;
+        }
+        return halfReverseX == x || halfReverseX / 10 == x;
+    }
+}
+```
