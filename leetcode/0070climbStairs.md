@@ -33,7 +33,7 @@ class Solution {
 }
 ```
 
-优化: 只是用两个变量
+优化: 只使用两个变量
 
 ```java
 class Solution {
