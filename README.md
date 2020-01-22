@@ -96,7 +96,7 @@
 [058]: ./leetcode/0058lengthOfLastWord.md
 [066]: ./leetcode/0066plusOne.md
 [067]: ./leetcode/0067addBinary.md
-[069]: ./leetcode/
+[069]: ./leetcode/0069mySqrt.md
 [070]: ./leetcode/
 [083]: ./leetcode/
 [088]: ./leetcode/
