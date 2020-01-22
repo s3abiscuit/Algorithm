@@ -60,3 +60,23 @@ class Solution {
     }
 }
 ```
+
+## 总结: 需要对二分查找有更加深刻的理解
+
+1. mid可以走到数组所有的下标
+2. 没有命中的结束条件是lo>hi, 这个时候要清楚lo和hi的位置
+
+```java
+public static int indexOf(int[] a, int key) {
+    int lo = 0;
+    int hi = a.length - 1;
+    while (lo <= hi) {
+        // Key is in a[lo..hi] or not present.
+        int mid = lo + (hi - lo) / 2;
+        if      (key < a[mid]) hi = mid - 1;
+        else if (key > a[mid]) lo = mid + 1;
+        else return mid;
+    }
+    return -1;
+}
+```
