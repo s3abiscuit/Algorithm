@@ -61,10 +61,13 @@ class Solution {
 }
 ```
 
-## 总结: 需要对二分查找有更加深刻的理解
+## 总结
+
+**需要对二分查找有更加深刻的理解**
 
 1. mid可以走到数组所有的下标
 2. 没有命中的结束条件是lo>hi, 这个时候要清楚lo和hi的位置
+3. 二分查找miss的时候, lo>hi且lo和hi包围target
 
 ```java
 public static int indexOf(int[] a, int key) {
