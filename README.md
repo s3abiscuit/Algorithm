@@ -21,7 +21,7 @@
 | 66   | [Plus One][066]                          | Array, Math                              |
 | 67   | [Add Binary][067]                        | Math, String                             |
 | 69   | [Sqrt(x)][069]                           | Binary Search, Math                      |
-| 70   | [Climbing Stairs][070]                   | Dynamic Programming                      |
+| 70   | [Climbing Stairs][070]                   | Dynamic Programming, Fibonacci           |
 | 83   | [Remove Duplicates from Sorted List][083] | Linked List                              |
 | 88   | [Merge Sorted Array][088]                | Array, Two Pointers                      |
 | 100  | [Same Tree][100]                         | Tree, Depth-first Search                 |
@@ -97,7 +97,7 @@
 [066]: ./leetcode/0066plusOne.md
 [067]: ./leetcode/0067addBinary.md
 [069]: ./leetcode/0069mySqrt.md
-[070]: ./leetcode/
+[070]: ./leetcode/0070climbStairs.md
 [083]: ./leetcode/
 [088]: ./leetcode/
 [100]: ./leetcode/
