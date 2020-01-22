@@ -9,6 +9,8 @@
 
 ## 解法
 
+需要考虑到Interger的最大值和最小值
+
 ```java
 class Solution {
     public int reverse(int x) {
@@ -21,6 +23,19 @@ class Solution {
             rev = rev * 10 + pop;
         }
         return rev;
+    }
+}
+```
+
+借助于long类型
+
+```java
+class Solution {
+    public int reverse(int x) {
+        long res = 0;
+        for (; x != 0; x /= 10)
+            res = res * 10 + x % 10;
+        return res > Integer.MAX_VALUE || res < Integer.MIN_VALUE ? 0 : (int) res;
     }
 }
 ```
