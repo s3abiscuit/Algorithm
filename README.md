@@ -98,8 +98,8 @@
 [067]: ./leetcode/0067addBinary.md
 [069]: ./leetcode/0069mySqrt.md
 [070]: ./leetcode/0070climbStairs.md
-[083]: ./leetcode/
-[088]: ./leetcode/
+[083]: ./leetcode/0083deleteDuplicates.md
+[088]: ./leetcode/0088merge.md
 [100]: ./leetcode/
 [101]: ./leetcode/
 [104]: ./leetcode/
