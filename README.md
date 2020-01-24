@@ -108,7 +108,7 @@
 [110]: ./leetcode/
 [111]: ./leetcode/
 [112]: ./leetcode/
-[118]: ./leetcode/
+[118]: ./leetcode/0118generate.md
 [119]: ./leetcode/
 [121]: ./leetcode/
 [122]: ./leetcode/
