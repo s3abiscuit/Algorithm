@@ -29,3 +29,19 @@ class Solution {
     }
 }
 ```
+
+改进：只使用一轮循环，每次记录之前的最小值
+
+```java
+class Solution {
+    public int maxProfit(int[] prices) {
+        int max = 0, minPrice = Integer.MAX_VALUE;
+        for (int i = 0; i < prices.length; ++i) {
+            if (prices[i] < minPrice) minPrice = prices[i];
+            int delta = prices[i] - minPrice;
+            if (delta > max) max = delta;
+        }
+        return max;
+    }
+}
+```
