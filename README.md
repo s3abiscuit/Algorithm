@@ -111,7 +111,7 @@
 [118]: ./leetcode/0118generate.md
 [119]: ./leetcode/0119getRow.md
 [121]: ./leetcode/0121maxProfit.md
-[122]: ./leetcode/
+[122]: ./leetcode/0122maxProfit2.md
 [543]: ./leetcode/
 
 [002]: ./leetcode/

@@ -30,30 +30,7 @@ class Solution {
 }
 ```
 
-正统解法： 找到所有连续的谷峰差，然后求和
-
-```java
-class Solution {
-    public int maxProfit(int[] prices) {
-        int i = 0;
-        int valley = prices[0];
-        int peak = prices[0];
-        int maxprofit = 0;
-        while (i < prices.length - 1) {
-            while (i < prices.length - 1 && prices[i] >= prices[i + 1])
-                i++;
-            valley = prices[i];
-            while (i < prices.length - 1 && prices[i] <= prices[i + 1])
-                i++;
-            peak = prices[i];
-            maxprofit += peak - valley;
-        }
-        return maxprofit;
-    }
-}
-```
-
-投机解法：只使用一轮循环，每次记录之前的最小值
+改进解法：只使用一轮循环，每次记录之前的最小值
 
 ```java
 class Solution {
