@@ -114,19 +114,19 @@
 [122]: ./leetcode/0122maxProfit2.md
 [543]: ./leetcode/
 
-[002]: ./leetcode/
-[003]: ./leetcode/
-[005]: ./leetcode/
-[006]: ./leetcode/
-[008]: ./leetcode/
+[002]: ./leetcode/0002addTwoNumber.md
+[003]: ./leetcode/0003lengthOfLongestSubstring.md
+[005]: ./leetcode/0005longestPlindrome.md
+[006]: ./leetcode/0006convert.md
+[008]: ./leetcode/0008myAtoi.md
 [011]: ./leetcode/
-[012]: ./leetcode/
+[012]: ./leetcode/0012intToRoman.md
 [015]: ./leetcode/
 [016]: ./leetcode/
 [017]: ./leetcode/
 [018]: ./leetcode/
-[019]: ./leetcode/
-[022]: ./leetcode/
+[019]: ./leetcode/0019removeNthFromEnd.md
+[022]: ./leetcode/0022generateParenthesis.md
 [024]: ./leetcode/
 [029]: ./leetcode/
 [033]: ./leetcode/
