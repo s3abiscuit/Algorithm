@@ -101,7 +101,7 @@
 [083]: ./leetcode/0083deleteDuplicates.md
 [088]: ./leetcode/0088merge.md
 [100]: ./leetcode/0100isSameTree.md
-[101]: ./leetcode/
+[101]: ./leetcode/0101isSymmetric.md
 [104]: ./leetcode/
 [107]: ./leetcode/
 [108]: ./leetcode/
