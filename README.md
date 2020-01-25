@@ -103,16 +103,16 @@
 [100]: ./leetcode/0100isSameTree.md
 [101]: ./leetcode/0101isSymmetric.md
 [104]: ./leetcode/0104maxDepth.md
-[107]: ./leetcode/
-[108]: ./leetcode/
-[110]: ./leetcode/
-[111]: ./leetcode/
-[112]: ./leetcode/
+[107]: ./leetcode/0107levelOrderBottom.md
+[108]: ./leetcode/0108sortedArrayToBST.md
+[110]: ./leetcode/0110isBalanced.md
+[111]: ./leetcode/0111minDepth.md
+[112]: ./leetcode/0112hasPathSum.md
 [118]: ./leetcode/0118generate.md
 [119]: ./leetcode/0119getRow.md
 [121]: ./leetcode/0121maxProfit.md
 [122]: ./leetcode/0122maxProfit2.md
-[543]: ./leetcode/
+[543]: ./leetcode/0543diameterOfBinaryTree.md
 
 [002]: ./leetcode/0002addTwoNumber.md
 [003]: ./leetcode/0003lengthOfLongestSubstring.md
