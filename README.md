@@ -102,7 +102,7 @@
 [088]: ./leetcode/0088merge.md
 [100]: ./leetcode/0100isSameTree.md
 [101]: ./leetcode/0101isSymmetric.md
-[104]: ./leetcode/
+[104]: ./leetcode/0104maxDepth.md
 [107]: ./leetcode/
 [108]: ./leetcode/
 [110]: ./leetcode/
