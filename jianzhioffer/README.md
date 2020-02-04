@@ -2,12 +2,12 @@
 
 | #    | Title                                    | Tag                                      |
 | :--- | :--------------------------------------- | :--------------------------------------- |
-| 01   | [赋值运算符函数][01]                  | |
-| 02   | [实现Singleton模式][02]              ||
+| 01   | [赋值运算符函数]                      | |
+| 02   | [实现Singleton模式][02]              |Design Pattern |
 | 03   | [二维数组中的查找][03]                 | Array |
 | 04   | [替换空格][04]                        | Array |
-| 05   | [从尾到头打印链表][05]                 | Linked List |
-| 06   | [重建二叉树][06]                      | Tree, Array |
+| 05   | [从尾到头打印链表][05]                 | Linked List, Recursion |
+| 06   | [重建二叉树][06]                      | Tree, Array, Recursion |
 | 07   | [用两个栈实现队列][07]                 | Stack, Queue |
 | 08   | [旋转数组的最小数字][08]                | Array, Binary Search |
 | 09   | [斐波那契数列][09]                     | Math |
@@ -53,53 +53,52 @@
 | 49   | [把字符串转换为数字][49]                 |String|
 | 50   | [树中两个结点的最低公共祖先][50]           | Tree|
 
-[01]: ./CMyStringOperator.md
-[02]: ./Singleton.md
-[03]: ./Find.md
-[04]: ./ReplaceBlank.md
-[05]: ./PrintListReversely.md
-[06]: ./ConstructBST.md
-[07]: ./CQueue.md
-[08]: ./Min.md
-[09]: ./Fibonacci.md
-[10]: ./NumberOf1.md
-[11]: ./Power.md
-[12]: ./Print1ToMaxOfNDigits.md
-[13]: ./DeleteNode.md
-[14]: ./ReorderOddEven.md
-[15]: ./FindKehToTail.md
-[16]: ./ReverseList.md
-[17]: ./Merge.md
-[18]: ./HasSubTree.md
-[19]: ./MirrorRecursively.md
-[20]: ./PrintMatrixClockwisely.md
-[21]: ./StackWithMin.md
-[22]: ./IsPopOrder.md
-[23]: ./PrintFromTopToBottom.md
-[24]: ./VerifySwquenceOfBST.md
-[25]: ./FindPath.md
-[26]: ./CloneComplexLinkedList.md
-[27]: ./.md
-[28]: ./.md
-[29]: ./.md
-[30]: ./.md
-[31]: ./.md
-[32]: ./.md
-[33]: ./.md
-[34]: ./.md
-[35]: ./.md
-[36]: ./.md
-[37]: ./.md
-[38]: ./.md
-[39]: ./
-[40]: ./.md
-[41]: ./
-[42]: ./
-[43]: ./
-[44]: ./
-[45]: ./.md
-[46]: ./.md
-[47]: ./
-[48]: ./
-[49]: ./
-[50]: ./
+[02]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test02.java
+[03]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test03.java
+[04]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test04.java   
+[05]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test05.java
+[06]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test06.java
+[07]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test07.java
+[08]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test08.java
+[09]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test09.java
+[10]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test10.java
+[11]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test11.java
+[12]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test12.java
+[13]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test13.java
+[14]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test14.java
+[15]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test15.java
+[16]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test16.java
+[17]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test17.java
+[18]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test18.java
+[19]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test19.java
+[20]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test20.java
+[21]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test21.java
+[22]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test22.java
+[23]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test23.java
+[24]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test24.java
+[25]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test25.java
+[26]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test26.java
+[27]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test27.java
+[28]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test28.java
+[29]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test29.java
+[30]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test30.java
+[31]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test31.java
+[32]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test32.java
+[33]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test33.java
+[34]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test34.java
+[35]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test35.java
+[36]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test36.java
+[37]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test37.java
+[38]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test38.java
+[39]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test39.java
+[40]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test40.java
+[41]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test41.java
+[42]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test42.java
+[43]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test43.java
+[44]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test44.java
+[45]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test45.java
+[46]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test46.java
+[47]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test47.java
+[48]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test48.java
+[49]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test49.java
+[50]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test50.java
