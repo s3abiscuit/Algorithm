@@ -54,7 +54,7 @@
 | 50   | [树中两个结点的最低公共祖先][50]           | Tree|
 
 [02]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test02.java
-[03]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test03.java
+[03]: ./Solution03.java
 [04]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test04.java   
 [05]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test05.java
 [06]: https://github.com/s3abiscuit/coding-interviews/blob/master/src/Test06.java
