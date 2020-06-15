@@ -5,11 +5,35 @@
 
 ## 解决方法：
 
+### 方法一 暴力法两轮循环
+
+```java
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        if(s.length()==0) return 0;
+        HashSet<Character> set = new HashSet<>();
+        int max=1;
+        for(int i = 0; i<s.length(); i++){
+            for (int j = i; j<s.length(); j++){
+                if(!set.contains(s.charAt(j))){
+                    set.add(s.charAt(j));
+                    max = set.size()>max? set.size():max;
+                }else {
+                    set.clear();
+                    break;
+                }
+            }
+        }
+        return max;
+    }
+}
+```
+
 `abcdefgahijklmn`
 
 第一轮, abcdefg 读到下一个a的时候变为bcdefga,然后继续
 
-使用滑动窗口
+### 方法二 使用滑动窗口
 
 ```java
 class Solution {
