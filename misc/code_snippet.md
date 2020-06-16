@@ -48,9 +48,9 @@ public int strToInt(String str) {
 
 ## reverse integer
 
-input: 123, 110
+input: 123, 110, -123
 
-output: 321, 11
+output: 321, 11, -321
 
 ```java
 public int reverse(int x) {
@@ -65,3 +65,17 @@ public int reverse(int x) {
     return rev;
 }
 ```
+
+## is Palindromic
+
+```java
+private boolean validPalindromic(String str, int left, int right) {
+    while (left < right) {
+        if (str.charAt(left) != str.charAt(right) {
+            return false;
+        }
+        left++;
+        right--;
+    }
+    return true;
+}
