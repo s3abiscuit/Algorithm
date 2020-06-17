@@ -79,3 +79,15 @@ private boolean validPalindromic(String str, int left, int right) {
     }
     return true;
 }
+
+## char to int and int to char
+
+```java
+// char to int
+char cNumber2='3';
+int number2=cNumber2-'0';
+
+// int to char
+int number = 9;
+char cNumber= (char) (number+'0');
+```
