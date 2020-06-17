@@ -79,6 +79,7 @@ private boolean validPalindromic(String str, int left, int right) {
     }
     return true;
 }
+```
 
 ## char to int and int to char
 
